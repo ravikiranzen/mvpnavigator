@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iteration Tracking Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Iteration Tracking Dashboard</h1>
+  
+  <div class="iteration-form">
+    <h2>Add New Iteration</h2>
+    <label for="version">Version Number:</label>
+    <input type="text" id="version" placeholder="Enter version number">
+    
+    <label for="releaseDate">Release Date:</label>
+    <input type="date" id="releaseDate">
+    
+    <label for="majorChanges">Major Changes:</label>
+    <textarea id="majorChanges" placeholder="Enter major changes"></textarea>
+    
+    <label for="specLink">Product Spec Document Link:</label>
+    <input type="url" id="specLink" placeholder="Enter product spec link">
+    
+    <label for="learning">Learning from Customers:</label>
+    <textarea id="learning" placeholder="Enter your learnings"></textarea>
+    
+    <button onclick="addIteration()">Add Iteration</button>
+  </div>
+
+  <div class="iteration-filter">
+    <h2>Filter Iterations</h2>
+    <label for="filterText">Filter by Name, Version, Date, Major Changes, Spec Link, or Learning:</label>
+    <input type="text" id="filterText" placeholder="Enter filter text" oninput="filterIterations()">
+    <button onclick="clearFilter()">Clear Filter</button>
+  </div>
+  
+  <div class="iteration-list">
+    <h2>Iteration List</h2>
+    <ul id="iterationList"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

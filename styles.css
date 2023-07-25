@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .iteration-form {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .label-input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .iteration-list {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .iteration-filter {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
